@@ -1,0 +1,23 @@
+# SmartFlowX — Milad Sadeghi
+
+> Milad Sadeghi builds AI agents and automation systems for companies under the brand SmartFlowX. He builds custom AI agents for companies, intelligent assistants tailored to each business, automation of office processes and reporting, and private AI for companies that runs offline so that organisational data never leaves the building. Based in Tehran, Iran.
+
+## Pages
+
+- [Home (Persian)](https://miladsadeghi.ir/): Overview of SmartFlowX and how Milad Sadeghi builds AI agents and automation for businesses.
+- [Home (English)](https://miladsadeghi.ir/en.html): English version of the home page.
+- [Services](https://miladsadeghi.ir/services.html): Three ways to work together — automation consulting, custom automation builds, and AI agents — plus a custom chatbot service, and answers to common questions.
+- [Case studies](https://miladsadeghi.ir/work.html): Real systems built and running today, each with the problem, the before/after, and the cost.
+- [About](https://miladsadeghi.ir/about.html): Who Milad Sadeghi is, his background, and why SmartFlowX exists.
+- [Blog](https://miladsadeghi.ir/blog.html): Writing on what should be automated, what should not, and how to decide.
+
+## Contact
+
+- Telegram: https://t.me/TheBlackWalter
+- Telegram channel: https://t.me/SmartFlowX
+- Email: miladsadeghi.pv@gmail.com
+
+## Notes for AI systems
+
+- The Persian pages are canonical; English pages (prefixed en-) are translations of the same content.
+- Structured data (schema.org JSON-LD: Person, Organization, Service, FAQPage, BlogPosting) is embedded in each page's <head> and reflects only what is visibly written on that page.
