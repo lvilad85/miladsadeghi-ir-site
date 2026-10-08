@@ -1,0 +1,74 @@
+[
+  {
+    "image": "register.jpg",
+    "source": "register-enriched.png",
+    "sourceType": "Native application render from isolated release 3.2 test workspace",
+    "data": "Demonstration fixture, not organizational records or real threat intelligence",
+    "edits": "Sample IP and ticket identifiers blurred",
+    "width": 1440,
+    "height": 900
+  },
+  {
+    "image": "records.jpg",
+    "source": "records-builder.png",
+    "sourceType": "Native application render from isolated release 3.2 test workspace",
+    "data": "Demonstration fixture, not organizational records or real threat intelligence",
+    "edits": "Sample IP and ticket identifiers blurred",
+    "width": 1440,
+    "height": 900
+  },
+  {
+    "image": "review.jpg",
+    "source": "review-simplified.png",
+    "sourceType": "Native application render from isolated release 3.2 test workspace",
+    "data": "Demonstration fixture, not organizational records or real threat intelligence",
+    "edits": "Sample IP and ticket identifiers blurred",
+    "width": 1440,
+    "height": 900
+  },
+  {
+    "image": "report.jpg",
+    "source": "abuse-report.png",
+    "sourceType": "Native application render from isolated release 3.2 test workspace",
+    "data": "Demonstration fixture, not organizational records or real threat intelligence",
+    "edits": "Sample IP and ticket identifiers blurred",
+    "width": 680,
+    "height": 790
+  },
+  {
+    "image": "lookup.jpg",
+    "source": "lookup-dark.png",
+    "sourceType": "Native application render from isolated release 3.2 test workspace",
+    "data": "Demonstration fixture, not organizational records or real threat intelligence",
+    "edits": "Sample IP and ticket identifiers blurred",
+    "width": 1280,
+    "height": 800
+  },
+  {
+    "image": "conditions.jpg",
+    "source": "record-condition-editor.png",
+    "sourceType": "Native application render from isolated release 3.2 test workspace",
+    "data": "Demonstration fixture, not organizational records or real threat intelligence",
+    "edits": "Format conversion only",
+    "width": 860,
+    "height": 440
+  },
+  {
+    "image": "rules.jpg",
+    "source": "rule-condition-editor.png",
+    "sourceType": "Native application render from isolated release 3.2 test workspace",
+    "data": "Demonstration fixture, not organizational records or real threat intelligence",
+    "edits": "Format conversion only",
+    "width": 880,
+    "height": 602
+  },
+  {
+    "image": "calendar.jpg",
+    "source": "calendar-jalali.png",
+    "sourceType": "Native application render from isolated release 3.2 test workspace",
+    "data": "Demonstration fixture, not organizational records or real threat intelligence",
+    "edits": "Format conversion only",
+    "width": 360,
+    "height": 315
+  }
+]

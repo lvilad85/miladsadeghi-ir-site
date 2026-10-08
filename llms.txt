@@ -1,13 +1,20 @@
 # SmartFlowX — Milad Sadeghi
 
-> Milad Sadeghi builds AI agents and automation systems for companies under the brand SmartFlowX. He builds custom AI agents for companies, intelligent assistants tailored to each business, automation of office processes and reporting, and private AI for companies that runs offline so that organisational data never leaves the building. Based in Tehran, Iran.
+> Milad Sadeghi builds AI agents, custom chatbots and automation systems for businesses under the brand SmartFlowX. The website presents practical examples of customer support, store bots, price updates, request management, advertisement filtering and IP review workflows. Based in Tehran, Iran.
 
 ## Pages
 
 - [Home (Persian)](https://miladsadeghi.ir/): Overview of SmartFlowX and how Milad Sadeghi builds AI agents and automation for businesses.
 - [Home (English)](https://miladsadeghi.ir/en.html): English version of the home page.
-- [Services](https://miladsadeghi.ir/services.html): Three ways to work together — automation consulting, custom automation builds, and AI agents — plus a custom chatbot service, and answers to common questions.
-- [Case studies](https://miladsadeghi.ir/work.html): Real systems built and running today, each with the problem, the before/after, and the cost.
+- [Services](https://miladsadeghi.ir/services.html): Custom chatbots, AI agents, store bots and checking/reporting automation, with examples and answers to common questions.
+- [Case studies](https://miladsadeghi.ir/work.html): Client projects and personal tools, with practical capabilities and screenshots. Demonstration images are labelled on their pages.
+- [Adrina](https://miladsadeghi.ir/work-adrina.html): Mobile store bot and mini app for browsing, budgets, instalments and customer requests.
+- [PabePa](https://miladsadeghi.ir/work-pabepa.html): Routine tracking, team activities and optional AI-assisted calorie estimation.
+- [Nazari Gold](https://miladsadeghi.ir/work-nazari.html): Gold catalogue, price updates, calculations and alerts.
+- [Gooshiinoo](https://miladsadeghi.ir/work-divar.html): Automated advertisement search and filtering for a mobile store.
+- [IP management](https://miladsadeghi.ir/work-soc.html): IP records, checking, rules, review deadlines and reports for an unnamed security organization.
+- [SmartFlowX chatbot](https://miladsadeghi.ir/work-chatbot.html): Milad's own website assistant for service questions and follow-up conversations.
+- [AgentBot](https://miladsadeghi.ir/work-agentbot.html): Milad's own AI agent for managing website, bot and server tasks through Telegram.
 - [About](https://miladsadeghi.ir/about.html): Who Milad Sadeghi is, his background, and why SmartFlowX exists.
 - [Blog](https://miladsadeghi.ir/blog.html): Writing on what should be automated, what should not, and how to decide.
 
