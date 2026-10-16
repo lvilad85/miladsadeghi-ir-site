@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+<title>ساخت ایجنت هوش مصنوعی کسب‌وکار | SmartFlowX</title>
+<meta name="description" content="ایجنت هوش مصنوعی برای بررسی، انجام کار و گزارش نتیجه؛ با دسترسی مشخص و تأیید آدم. مثال AgentBot، مراحل ساخت و عوامل هزینه رو ببین.">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<meta name="theme-color" content="#E9EBEC" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0F2C3A" media="(prefers-color-scheme: dark)">
+<meta name="author" content="Milad Sadeghi">
+<link rel="canonical" href="https://miladsadeghi.ir/service-ai-agent.html">
+<link rel="alternate" hreflang="fa" href="https://miladsadeghi.ir/service-ai-agent.html">
+<link rel="alternate" hreflang="en" href="https://miladsadeghi.ir/en-service-ai-agent.html">
+<link rel="alternate" hreflang="x-default" href="https://miladsadeghi.ir/service-ai-agent.html">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36'%3E%3Crect x='3' y='3' width='30' height='30' rx='10' fill='%23FF6E42'/%3E%3Cpath d='M10 23.5L15.8 15L20.4 19.4L26 11' fill='none' stroke='%23092634' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='26' cy='11' r='2.8' fill='%23092634'/%3E%3C/svg%3E">
+<link rel="icon" type="image/png" sizes="512x512" href="https://miladsadeghi.ir/favicon.png">
+<link rel="apple-touch-icon" href="https://miladsadeghi.ir/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SmartFlowX">
+<meta property="og:locale" content="fa_IR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:url" content="https://miladsadeghi.ir/service-ai-agent.html">
+<meta property="og:title" content="ساخت ایجنت هوش مصنوعی کسب‌وکار | SmartFlowX">
+<meta property="og:description" content="ایجنت هوش مصنوعی برای بررسی، انجام کار و گزارش نتیجه؛ با دسترسی مشخص و تأیید آدم. مثال AgentBot، مراحل ساخت و عوامل هزینه رو ببین.">
+<meta property="og:image" content="https://miladsadeghi.ir/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="SmartFlowX؛ ایجنت هوش مصنوعی و اتوماسیون کسب‌وکار">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ساخت ایجنت هوش مصنوعی کسب‌وکار | SmartFlowX">
+<meta name="twitter:description" content="ایجنت هوش مصنوعی برای بررسی، انجام کار و گزارش نتیجه؛ با دسترسی مشخص و تأیید آدم. مثال AgentBot، مراحل ساخت و عوامل هزینه رو ببین.">
+<meta name="twitter:image" content="https://miladsadeghi.ir/og.jpg">
+<meta name="twitter:image:alt" content="SmartFlowX؛ ایجنت هوش مصنوعی و اتوماسیون کسب‌وکار">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://miladsadeghi.ir/#milad",
+      "name": "میلاد صادقی",
+      "alternateName": [
+        "Milad Sadeghi",
+        "میلاد صادقی"
+      ],
+      "email": "mailto:miladsadeghi.pv@gmail.com",
+      "telephone": "+989051103405",
+      "jobTitle": "بنیان‌گذار SmartFlowX و سازنده‌ی ایجنت هوش مصنوعی",
+      "worksFor": {
+        "@id": "https://miladsadeghi.ir/#smartflowx"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "تهران",
+        "addressCountry": "IR"
+      },
+      "knowsAbout": [
+        "ساخت ایجنت هوش مصنوعی",
+        "چت‌بات اختصاصی",
+        "اتوماسیون کسب‌وکار"
+      ],
+      "url": "https://miladsadeghi.ir/about.html",
+      "image": "https://miladsadeghi.ir/milad-sadeghi.jpg",
+      "mainEntityOfPage": {
+        "@id": "https://miladsadeghi.ir/about.html#webpage"
+      },
+      "sameAs": [
+        "https://github.com/lvilad85",
+        "https://t.me/TheBlackWalter"
+      ],
+      "description": "میلاد صادقی، بنیان‌گذار SmartFlowX، برای کسب‌وکارها ایجنت هوش مصنوعی، چت‌بات و سیستم اتوماسیون می‌سازه. از تهران و به‌صورت آنلاین همکاری می‌کنه."
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://miladsadeghi.ir/#smartflowx",
+      "name": "SmartFlowX",
+      "url": "https://miladsadeghi.ir/",
+      "founder": {
+        "@id": "https://miladsadeghi.ir/#milad"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "تهران",
+        "addressCountry": "IR"
+      },
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://miladsadeghi.ir/favicon.png",
+        "width": 512,
+        "height": 512
+      },
+      "sameAs": [
+        "https://t.me/SmartFlowX"
+      ],
+      "email": "miladsadeghi.pv@gmail.com",
+      "telephone": "+989051103405",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer inquiries",
+        "url": "https://miladsadeghi.ir/#contact",
+        "email": "miladsadeghi.pv@gmail.com",
+        "telephone": "+989051103405",
+        "availableLanguage": [
+          "fa",
+          "en"
+        ]
+      },
+      "description": "SmartFlowX برند میلاد صادقی برای ساخت چت‌بات، ایجنت هوش مصنوعی، ربات فروشگاهی و اتوماسیون بررسی و گزارش‌گیری برای کسب‌وکارهاست."
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://miladsadeghi.ir/#website",
+      "url": "https://miladsadeghi.ir/",
+      "publisher": {
+        "@id": "https://miladsadeghi.ir/#smartflowx"
+      },
+      "name": "SmartFlowX",
+      "alternateName": [
+        "میلاد صادقی",
+        "Milad Sadeghi"
+      ],
+      "inLanguage": [
+        "fa-IR",
+        "en"
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://miladsadeghi.ir/service-ai-agent.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "خانه",
+          "item": "https://miladsadeghi.ir/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "خدمات",
+          "item": "https://miladsadeghi.ir/services.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "ساخت ایجنت هوش مصنوعی برای کارهای کسب‌وکارت",
+          "item": "https://miladsadeghi.ir/service-ai-agent.html"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://miladsadeghi.ir/service-ai-agent.html#webpage",
+      "url": "https://miladsadeghi.ir/service-ai-agent.html",
+      "name": "ساخت ایجنت هوش مصنوعی کسب‌وکار | SmartFlowX",
+      "description": "ایجنت هوش مصنوعی برای بررسی، انجام کار و گزارش نتیجه؛ با دسترسی مشخص و تأیید آدم. مثال AgentBot، مراحل ساخت و عوامل هزینه رو ببین.",
+      "inLanguage": "fa-IR",
+      "isPartOf": {
+        "@id": "https://miladsadeghi.ir/#website"
+      },
+      "publisher": {
+        "@id": "https://miladsadeghi.ir/#smartflowx"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://miladsadeghi.ir/og.jpg"
+      },
+      "breadcrumb": {
+        "@id": "https://miladsadeghi.ir/service-ai-agent.html#breadcrumb"
+      },
+      "mainEntity": {
+        "@id": "https://miladsadeghi.ir/service-ai-agent.html#service"
+      },
+      "dateModified": "2026-10-16"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://miladsadeghi.ir/service-ai-agent.html#service",
+      "name": "ساخت ایجنت هوش مصنوعی برای کارهای کسب‌وکارت",
+      "url": "https://miladsadeghi.ir/service-ai-agent.html",
+      "description": "اگه کارت فقط جواب دادن به سؤال نیست و باید اطلاعات بررسی بشه، چند ابزار با هم کار کنن و نتیجه پیگیری بشه، می‌تونیم سراغ ایجنت بریم. اول یه کار مشخص انتخاب می‌کنیم و دسترسی‌هاش رو روشن می‌کنیم.",
+      "provider": {
+        "@id": "https://miladsadeghi.ir/#smartflowx"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Iran"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://miladsadeghi.ir/service-ai-agent.html#webpage"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://miladsadeghi.ir/service-ai-agent.html#faq",
+      "isPartOf": {
+        "@id": "https://miladsadeghi.ir/service-ai-agent.html#webpage"
+      },
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "ایجنت می‌تونه همه‌ی کارهای شرکت رو انجام بده؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "نه؛ قابلیت هر ایجنت به ابزار، دسترسی و محدوده‌ای که براش ساخته شده بستگی داره. از یه کار قابل بررسی شروع می‌کنیم و بعد از دیدن نتیجه، درباره‌ی گسترشش تصمیم می‌گیریم."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "برای هر کار باید از مدل زبانی استفاده کنیم؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "نه. محاسبه و قواعد ثابت معمولاً با کد یا گردش‌کار مشخص انجام می‌شن. مدل رو جایی استفاده می‌کنیم که فهم متن یا انتخاب بین مسیرها به کار بیاد."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "نمونه‌ی ساخته‌شده داری؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "AgentBot رو برای کارهای سایت، ربات و سرور خودم ساختم. توی صفحه‌ی پروژه، نمونه‌ی گفتگو، بررسی و انجام کار رو می‌بینی."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+<script>try{var t=localStorage.getItem('sfx-theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+<link rel="stylesheet" href="/static/site.60a072f4e84a.css">
+<link rel="preload" as="font" type="font/woff2" href="/static/vazirmatn-400.aeba3c03b512.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="/static/vazirmatn-900.8fe15195ff5d.woff2" crossorigin>
+</head>
+<body>
+<div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+<header class="nav">
+  <div class="container nav-inner soft">
+    <a href="/" class="brand" aria-label="SmartFlowX؛ صفحه‌ی اصلی" data-fa-aria="SmartFlowX؛ صفحه‌ی اصلی" data-en-aria="SmartFlowX — Home">
+      <svg class="brand-mark" width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+        <rect x="3" y="3" width="30" height="30" rx="10" fill="var(--accent)"/>
+        <path d="M10 23.5L15.8 15L20.4 19.4L26 11" stroke="var(--accent-ink)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="26" cy="11" r="2.8" fill="var(--accent-ink)"/>
+      </svg>
+      <span data-fa="SmartFlowX" data-en="SmartFlowX">SmartFlowX</span>
+    </a>
+    <span class="nav-spacer"></span>
+    <a href="/#contact" class="btn btn-sm btn-primary soft soft-press soft-lift nav-cta"
+       data-fa="یه گفت‌وگو داشته باشیم" data-en="Let’s talk">یه گفت‌وگو داشته باشیم</a>
+    <div class="nav-ctls">
+      <button class="ctl soft soft-press" id="soundBtn" type="button" aria-pressed="true"
+              data-fa-aria="صدای تعامل" data-en-aria="Interaction sound" aria-label="صدای تعامل">
+        <svg class="ico ico-a" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4V5Z"/><path d="m17 9 4 6M21 9l-4 6"/></svg>
+        <svg class="ico ico-b" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4V5Z"/><path d="M16 9a4 4 0 0 1 0 6"/><path d="M18.5 6.5a8 8 0 0 1 0 11"/></svg>
+      </button>
+      <button class="ctl soft soft-press" id="themeBtn" type="button" aria-pressed="false"
+              data-fa-aria="تغییر حالت روشن و تیره" data-en-aria="Toggle light and dark mode" aria-label="تغییر حالت روشن و تیره">
+        <svg class="ico ico-a" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="ico ico-b" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
+      </button>
+      <a class="ctl soft soft-press" id="langBtn" href="/en-service-ai-agent.html" hreflang="en" rel="alternate"
+         data-fa-aria="Switch to English (EN)" data-en-aria="تغییر به فارسی (فا)" aria-label="Switch to English (EN)"
+         data-fa-url="/service-ai-agent.html" data-en-url="/en-service-ai-agent.html">
+        <span class="lang-label" data-fa="EN" data-en="فا" aria-hidden="true">EN</span>
+      </a>
+      <button class="ctl soft soft-press" id="menuBtn" type="button" aria-expanded="false" aria-controls="menu"
+              data-fa-aria="باز کردن منو" data-en-aria="Open menu" aria-label="باز کردن منو">
+        <svg class="ico ico-a" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        <svg class="ico ico-b" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+    <nav class="menu soft" id="menu" aria-label="منوی اصلی" data-fa-aria="منوی اصلی" data-en-aria="Main menu">
+      <div class="menu-list">
+        <a href="/">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1Z"/></svg>
+          <span data-fa="خانه" data-en="Home">خانه</span>
+        </a>
+        <a href="/services.html">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2 4 6v6c0 5 3.4 8.6 8 10 4.6-1.4 8-5 8-10V6Z"/><path d="m9 12 2 2 4-4"/></svg>
+          <span data-fa="خدمات" data-en="Services">خدمات</span>
+        </a>
+        <a href="/work.html">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/></svg>
+          <span data-fa="نمونه‌کارها" data-en="My work">نمونه‌کارها</span>
+        </a>
+        <a href="/about.html">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5V5a2 2 0 0 1 2-2h13v18H6a2 2 0 0 1-2-1.5Z"/><path d="M8 7h7M8 11h7"/></svg>
+          <span data-fa="درباره‌ی من" data-en="About me">درباره‌ی من</span>
+        </a>
+        <a href="/blog.html">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v14H4z"/><path d="M8 9h8M8 13h5"/></svg>
+          <span data-fa="بلاگ" data-en="Blog">بلاگ</span>
+        </a>
+        <a href="/#contact">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7 12 12 0 0 0 .7 2.8 2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg>
+          <span data-fa="تماس" data-en="Contact">تماس</span>
+        </a>
+      </div>
+    </nav>
+  </div>
+</header>
+<main id="top" class="service-guide">
+    <section class="page-head"><div class="container narrow">
+      <p class="crumb"><a href="/"><span data-fa="خانه" data-en="Home">خانه</span></a><span aria-hidden="true">/</span><a href="/services.html"><span data-fa="خدمات" data-en="Services">خدمات</span></a><span aria-hidden="true">/</span><span data-fa="ساخت ایجنت هوش مصنوعی برای کارهای کسب‌وکارت" data-en="An AI agent for your business tasks">ساخت ایجنت هوش مصنوعی برای کارهای کسب‌وکارت</span></p>
+      <h1 class="hero-title" data-fa="ساخت ایجنت هوش مصنوعی برای کارهای کسب‌وکارت" data-en="An AI agent for your business tasks">ساخت ایجنت هوش مصنوعی برای کارهای کسب‌وکارت</h1><p class="hero-lead" data-fa="اگه کارت فقط جواب دادن به سؤال نیست و باید اطلاعات بررسی بشه، چند ابزار با هم کار کنن و نتیجه پیگیری بشه، می‌تونیم سراغ ایجنت بریم. اول یه کار مشخص انتخاب می‌کنیم و دسترسی‌هاش رو روشن می‌کنیم." data-en="If your task goes beyond answering questions and involves checking information, using tools and following up, an agent may help. We’ll start with one clear task and define its access.">اگه کارت فقط جواب دادن به سؤال نیست و باید اطلاعات بررسی بشه، چند ابزار با هم کار کنن و نتیجه پیگیری بشه، می‌تونیم سراغ ایجنت بریم. اول یه کار مشخص انتخاب می‌کنیم و دسترسی‌هاش رو روشن می‌کنیم.</p><div class="case-actions"><a class="btn btn-primary soft soft-press" href="/#contact"><span data-fa="از نیاز کسب‌وکارم بگم" data-en="Let’s talk about my business">از نیاز کسب‌وکارم بگم</span></a></div>
+    </div></section>
+    <div class="container narrow guide-body"><section class="prose soft soft-3 guide-section"><h2 data-fa="فرق ایجنت با چت‌بات چیه؟" data-en="How is an agent different from a chatbot?">فرق ایجنت با چت‌بات چیه؟</h2><p data-fa="چت‌بات معمولاً گفتگو می‌کنه و جواب می‌ده. ایجنت، وقتی ابزار و دسترسی لازم رو داشته باشه، می‌تونه برای رسیدن به نتیجه چند مرحله رو جلو ببره: وضعیت رو بخونه، کار مجاز رو انجام بده و نتیجه رو بررسی و گزارش کنه. این اختیار باید از اول محدود و روشن باشه." data-en="A chatbot mainly talks and answers. With the right tools and access, an agent can move through several steps: read the situation, perform an allowed action, then check and report the result. That authority needs clear limits from the start.">چت‌بات معمولاً گفتگو می‌کنه و جواب می‌ده. ایجنت، وقتی ابزار و دسترسی لازم رو داشته باشه، می‌تونه برای رسیدن به نتیجه چند مرحله رو جلو ببره: وضعیت رو بخونه، کار مجاز رو انجام بده و نتیجه رو بررسی و گزارش کنه. این اختیار باید از اول محدود و روشن باشه.</p><p data-fa="مثلاً AgentBot که برای مدیریت پروژه‌های خودم ساختم، درخواست رو توی تلگرام می‌گیره و بررسی، اصلاح و پیگیری رو توی همون گفتگو جلو می‌بره. این نمونه رو می‌تونی ببینی؛ برای کسب‌وکار تو، ابزارها و محدوده‌ی کار رو جدا تعریف می‌کنیم." data-en="AgentBot, which I built for my own projects, takes a request in Telegram and handles investigation, changes and follow-up in the same conversation. You can explore that example; your tools and scope would be defined separately.">مثلاً AgentBot که برای مدیریت پروژه‌های خودم ساختم، درخواست رو توی تلگرام می‌گیره و بررسی، اصلاح و پیگیری رو توی همون گفتگو جلو می‌بره. این نمونه رو می‌تونی ببینی؛ برای کسب‌وکار تو، ابزارها و محدوده‌ی کار رو جدا تعریف می‌کنیم.</p></section><section class="prose soft soft-3 guide-section"><h2 data-fa="از چه کاری شروع کنیم؟" data-en="Which task should we start with?">از چه کاری شروع کنیم؟</h2><p data-fa="بهتره کاری رو انتخاب کنیم که ورودی، خروجی و معیار تمام شدنش معلوم باشه. مثلاً جمع کردن اطلاعات از چند منبع، بررسی وضعیت یه سرویس یا آماده کردن گزارش برای تأیید. اگه روال کار هنوز مبهمه، اول همون رو مرتب می‌کنیم." data-en="Choose a task with clear inputs, outputs and a definition of done. It might gather information, check a service or prepare a report for approval. If the workflow is still unclear, we’ll sort it out first.">بهتره کاری رو انتخاب کنیم که ورودی، خروجی و معیار تمام شدنش معلوم باشه. مثلاً جمع کردن اطلاعات از چند منبع، بررسی وضعیت یه سرویس یا آماده کردن گزارش برای تأیید. اگه روال کار هنوز مبهمه، اول همون رو مرتب می‌کنیم.</p><p data-fa="برای تصمیم، یه نمونه‌ی واقعی از کار، ابزارهایی که استفاده می‌کنی و خطاهایی که برات مهمن لازم داریم. همه‌ی کارها ایجنت نمی‌خوان؛ اگه یه اتوماسیون ساده همون نتیجه رو بده، همون مسیر رو پیشنهاد می‌دم." data-en="We’ll need a real example, the tools you use and the mistakes that matter to you. Not every task needs an agent. If straightforward automation gets the same result, that’s what I’ll suggest.">برای تصمیم، یه نمونه‌ی واقعی از کار، ابزارهایی که استفاده می‌کنی و خطاهایی که برات مهمن لازم داریم. همه‌ی کارها ایجنت نمی‌خوان؛ اگه یه اتوماسیون ساده همون نتیجه رو بده، همون مسیر رو پیشنهاد می‌دم.</p></section><section class="prose soft soft-3 guide-section"><h2 data-fa="دسترسی و تأیید آدم چطور مشخص می‌شه؟" data-en="How do permissions and approval work?">دسترسی و تأیید آدم چطور مشخص می‌شه؟</h2><p data-fa="مشخص می‌کنیم ایجنت چی رو فقط بخونه، چه تغییری رو خودش انجام بده و کجا ازت تأیید بگیره. دسترسی فقط در حد کار تعریف می‌شه و اطلاعات ورود هم باید در سمت سرور نگهداری بشه. جزئیات این بخش به ابزارها و حساسیت کار تو بستگی داره." data-en="We’ll define what the agent can only read, what it can change and where it needs your approval. Access is limited to the task, and credentials belong on the server. The details depend on your tools and the sensitivity of the work.">مشخص می‌کنیم ایجنت چی رو فقط بخونه، چه تغییری رو خودش انجام بده و کجا ازت تأیید بگیره. دسترسی فقط در حد کار تعریف می‌شه و اطلاعات ورود هم باید در سمت سرور نگهداری بشه. جزئیات این بخش به ابزارها و حساسیت کار تو بستگی داره.</p><p data-fa="ثبت نتیجه، بررسی خطا و امکان متوقف کردن ادامه‌ی کار رو هم طراحی می‌کنیم. توقف اجرا لزوماً تغییرهای قبلی رو برنمی‌گردونه؛ برای کارهایی که نیاز به برگشت دارن، باید روش برگشت و مسئولش از قبل مشخص باشه." data-en="We’ll plan reporting, error checks and how to stop further work. Stopping an agent doesn’t necessarily undo earlier changes. Tasks that need rollback should have a rollback method and owner agreed in advance.">ثبت نتیجه، بررسی خطا و امکان متوقف کردن ادامه‌ی کار رو هم طراحی می‌کنیم. توقف اجرا لزوماً تغییرهای قبلی رو برنمی‌گردونه؛ برای کارهایی که نیاز به برگشت دارن، باید روش برگشت و مسئولش از قبل مشخص باشه.</p></section><section class="prose soft soft-3 guide-section"><h2 data-fa="ساخت و هزینه‌ی ایجنت چطور پیش می‌ره؟" data-en="What do building and cost involve?">ساخت و هزینه‌ی ایجنت چطور پیش می‌ره؟</h2><p data-fa="اول محدوده و معیار نتیجه رو می‌نویسیم، بعد یه نسخه‌ی محدود می‌سازیم و روی نمونه‌های واقعی امتحانش می‌کنیم. تعداد و نوع ابزارها، پیچیدگی تصمیم‌ها، نیاز به تأیید، حجم اجرا و پشتیبانی روی زمان و هزینه اثر دارن. هزینه‌ی مدل و زیرساخت هم جدا روشن می‌شه." data-en="We’ll write down the scope and success criteria, build a limited version and test it on real examples. Tools, decision complexity, approvals, usage and support affect time and cost. Model and infrastructure costs are also made clear separately.">اول محدوده و معیار نتیجه رو می‌نویسیم، بعد یه نسخه‌ی محدود می‌سازیم و روی نمونه‌های واقعی امتحانش می‌کنیم. تعداد و نوع ابزارها، پیچیدگی تصمیم‌ها، نیاز به تأیید، حجم اجرا و پشتیبانی روی زمان و هزینه اثر دارن. هزینه‌ی مدل و زیرساخت هم جدا روشن می‌شه.</p></section>
+      <section class="prose soft soft-3 guide-section"><h2 data-fa="نمونه‌ی ساخته‌شده رو ببین" data-en="Explore the work I’ve built">نمونه‌ی ساخته‌شده رو ببین</h2><ul><li><a href="/work-agentbot.html"><span data-fa="AgentBot؛ بررسی و انجام کار از تلگرام" data-en="AgentBot: checking and acting from Telegram">AgentBot؛ بررسی و انجام کار از تلگرام</span></a></li></ul></section>
+      <section class="guide-section"><h2 data-fa="سؤال‌هایی که شاید داشته باشی" data-en="Questions you might have">سؤال‌هایی که شاید داشته باشی</h2><div class="faq-list"><details class="faq-item soft"><summary data-fa="ایجنت می‌تونه همه‌ی کارهای شرکت رو انجام بده؟" data-en="Can an agent do everything in the company?">ایجنت می‌تونه همه‌ی کارهای شرکت رو انجام بده؟</summary><div class="faq-a"><p data-fa="نه؛ قابلیت هر ایجنت به ابزار، دسترسی و محدوده‌ای که براش ساخته شده بستگی داره. از یه کار قابل بررسی شروع می‌کنیم و بعد از دیدن نتیجه، درباره‌ی گسترشش تصمیم می‌گیریم." data-en="No. Each agent depends on its tools, access and agreed scope. We start with a task we can evaluate, then decide whether to expand it.">نه؛ قابلیت هر ایجنت به ابزار، دسترسی و محدوده‌ای که براش ساخته شده بستگی داره. از یه کار قابل بررسی شروع می‌کنیم و بعد از دیدن نتیجه، درباره‌ی گسترشش تصمیم می‌گیریم.</p></div></details><details class="faq-item soft"><summary data-fa="برای هر کار باید از مدل زبانی استفاده کنیم؟" data-en="Does every step need a language model?">برای هر کار باید از مدل زبانی استفاده کنیم؟</summary><div class="faq-a"><p data-fa="نه. محاسبه و قواعد ثابت معمولاً با کد یا گردش‌کار مشخص انجام می‌شن. مدل رو جایی استفاده می‌کنیم که فهم متن یا انتخاب بین مسیرها به کار بیاد." data-en="No. Fixed calculations and rules usually belong in code or defined workflows. A model helps where understanding text or choosing a path is useful.">نه. محاسبه و قواعد ثابت معمولاً با کد یا گردش‌کار مشخص انجام می‌شن. مدل رو جایی استفاده می‌کنیم که فهم متن یا انتخاب بین مسیرها به کار بیاد.</p></div></details><details class="faq-item soft"><summary data-fa="نمونه‌ی ساخته‌شده داری؟" data-en="Do you have a working example?">نمونه‌ی ساخته‌شده داری؟</summary><div class="faq-a"><p data-fa="AgentBot رو برای کارهای سایت، ربات و سرور خودم ساختم. توی صفحه‌ی پروژه، نمونه‌ی گفتگو، بررسی و انجام کار رو می‌بینی." data-en="I built AgentBot for my own website, bot and server tasks. Its case study shows conversations, checks and actions.">AgentBot رو برای کارهای سایت، ربات و سرور خودم ساختم. توی صفحه‌ی پروژه، نمونه‌ی گفتگو، بررسی و انجام کار رو می‌بینی.</p></div></details></div></section>
+      <section class="prose soft soft-3 guide-section"><h2 data-fa="قبل از تصمیم، این‌ها رو بخون" data-en="A little reading before you decide">قبل از تصمیم، این‌ها رو بخون</h2><ul><li><a href="/blog-what-not-to-automate.html"><span data-fa="چه کارهایی رو بهتره خودکار نکنیم؟" data-en="What should not be automated">چه کارهایی رو بهتره خودکار نکنیم؟</span></a></li><li><a href="/blog-offline-ai.html"><span data-fa="هوش مصنوعی روی سرور خودت؛ کی لازمه و کی نه؟" data-en="AI on your own server: when it’s necessary, and when it isn’t">هوش مصنوعی روی سرور خودت؛ کی لازمه و کی نه؟</span></a></li></ul><h3><span data-fa="خدمات" data-en="Services">خدمات</span></h3><ul><li><a href="/service-ai-chatbot.html"><span data-fa="ساخت چت‌بات هوش مصنوعی برای سایتت" data-en="A custom AI chatbot for your website">ساخت چت‌بات هوش مصنوعی برای سایتت</span></a></li><li><a href="/service-business-automation.html"><span data-fa="اتوماسیون کسب‌وکار؛ کار تکراری کمتر، پیگیری راحت‌تر" data-en="Business automation for less repetitive work">اتوماسیون کسب‌وکار؛ کار تکراری کمتر، پیگیری راحت‌تر</span></a></li></ul></section>
+      <section class="final-cta soft soft-3 guide-section"><h2 data-fa="از یه نمونه‌ی واقعی شروع کنیم" data-en="Let’s start with a real example">از یه نمونه‌ی واقعی شروع کنیم</h2><p data-fa="من میلاد صادقی‌ام، بنیان‌گذار SmartFlowX. برای کسب‌وکارهای ایران ربات، ایجنت و اتوماسیون می‌سازم. توی گفت‌وگوی اول که رایگانه، از کارت می‌شنوم و با هم مسیر مناسبش رو پیدا می‌کنیم." data-en="I’m Milad Sadeghi, founder of SmartFlowX. I build bots, agents and automation for businesses in Iran. In our free first conversation, we’ll look at your work and find a suitable starting point.">من میلاد صادقی‌ام، بنیان‌گذار SmartFlowX. برای کسب‌وکارهای ایران ربات، ایجنت و اتوماسیون می‌سازم. توی گفت‌وگوی اول که رایگانه، از کارت می‌شنوم و با هم مسیر مناسبش رو پیدا می‌کنیم.</p><a class="btn btn-primary soft soft-press" href="/#contact"><span data-fa="از نیاز کسب‌وکارم بگم" data-en="Let’s talk about my business">از نیاز کسب‌وکارم بگم</span></a></section>
+    </div></main><footer class="footer">
+  <div class="container">
+    <div class="footer-inner soft">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="/" class="brand" aria-label="میلاد صادقی | SmartFlowX؛ خانه" data-fa-aria="میلاد صادقی | SmartFlowX؛ خانه" data-en-aria="Milad Sadeghi | SmartFlowX — Home">
+            <svg class="brand-mark" width="34" height="34" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+              <rect x="3" y="3" width="30" height="30" rx="10" fill="var(--accent)"/>
+              <path d="M10 23.5L15.8 15L20.4 19.4L26 11" stroke="var(--accent-ink)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="26" cy="11" r="2.8" fill="var(--accent-ink)"/>
+            </svg>
+            <span data-fa="میلاد صادقی" data-en="Milad Sadeghi">میلاد صادقی</span>
+          </a>
+          <p class="footer-tag"
+             data-fa="اتوماسیون فرآیند، ایجنت هوش مصنوعی، و هوش مصنوعی روی زیرساخت داخلی."
+             data-en="Process automation, AI agents, and AI on internal infrastructure.">اتوماسیون فرآیند، ایجنت هوش مصنوعی، و هوش مصنوعی روی زیرساخت داخلی.</p>
+        </div>
+        <div class="contact-row">
+          <a href="https://t.me/TheBlackWalter" class="contact-chip soft soft-press soft-lift" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.9 4.3 18.7 19c-.2 1-.9 1.3-1.7.8l-4.7-3.5-2.3 2.2c-.3.3-.5.5-.9.5l.3-4.7 8.6-7.8c.4-.3-.1-.5-.6-.2L6.8 13.1 2.2 11.6c-1-.3-1-1 .2-1.5l18-6.9c.8-.3 1.6.2 1.5 1.1Z"/></svg>
+            <span data-fa="تلگرام" data-en="Telegram">تلگرام</span>
+          </a>
+          <a href="mailto:miladsadeghi.pv@gmail.com" class="contact-chip soft soft-press soft-lift">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="m3 6 9 7 9-7"/></svg>
+            <span data-fa="ایمیل" data-en="Email">ایمیل</span>
+          </a>
+          <a href="tel:+989051103405" class="contact-chip soft soft-press soft-lift">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg>
+            <span data-fa="تماس" data-en="Call">تماس</span>
+          </a>
+          <a href="https://github.com/lvilad85" class="contact-chip soft soft-press soft-lift" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.4-3.4-1.4-.4-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.7.4-1.1.6-1.4-2.2-.2-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.2-.4-1.2.1-2.6 0 0 .8-.3 2.7 1a9.4 9.4 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .5 1.4.2 2.4.1 2.6.6.7 1 1.6 1 2.7 0 3.9-2.4 4.8-4.6 5 .4.3.7.9.7 1.9v2.8c0 .3.2.6.7.5A10 10 0 0 0 12 2Z"/></svg>
+            <span>GitHub</span>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <nav class="footer-legal" aria-label="قوانین" data-fa-aria="قوانین" data-en-aria="Legal">
+          <a href="/privacy.html" data-fa="حریم خصوصی" data-en="Privacy">حریم خصوصی</a>
+          <a href="/terms.html" data-fa="قوانین و مقررات" data-en="Terms">قوانین و مقررات</a>
+          <a href="/refund.html" data-fa="سیاست بازگشت وجه" data-en="Refund policy">سیاست بازگشت وجه</a>
+        </nav>
+        <p class="footer-copy"
+           data-fa="© ۱۴۰۵ SmartFlowX — میلاد صادقی. همه‌ی حقوق این سایت برای SmartFlowX محفوظه."
+           data-en="© 2026 SmartFlowX — Milad Sadeghi. All rights reserved.">© ۱۴۰۵ SmartFlowX — میلاد صادقی. همه‌ی حقوق این سایت برای SmartFlowX محفوظه.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<a href="#top" class="to-top btn-icon soft soft-press soft-lift" id="toTop"
+   data-fa-aria="برگشت به بالا" data-en-aria="Back to top" aria-label="برگشت به بالا">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5"/><path d="m5 12 7-7 7 7"/></svg>
+</a>
+<button type="button" class="chat-fab btn-icon soft soft-press soft-lift tilt" id="chatFab"
+        data-fa-aria="چت با دستیار هوش مصنوعی" data-en-aria="Chat with the AI assistant" aria-label="چت با دستیار هوش مصنوعی">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.5 8.5 0 0 1-8.5 8.5 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7A8.5 8.5 0 1 1 21 11.5Z"/></svg>
+</button>
+<div class="chat-fab-card soft soft-3" id="chatFabCard" role="dialog" aria-hidden="true" inert aria-label="گفتگو با دستیار SmartFlowX" data-fa-aria="گفتگو با دستیار SmartFlowX" data-en-aria="Chat with the SmartFlowX assistant">
+  <div class="chat-messages" id="chatMessages">
+    <div class="chat-msg chat-msg-bot" data-fa="سلام! چطور می‌تونم کمکت کنم؟" data-en="Hi! How can I help you?">سلام! چطور می‌تونم کمکت کنم؟</div>
+  </div>
+  <form class="chat-form" id="chatForm" autocomplete="off">
+    <input type="text" class="chat-input" id="chatInput" required
+           data-fa-placeholder="پیامت رو بنویس..." data-en-placeholder="Type a message..."
+           placeholder="پیامت رو بنویس...">
+    <button type="submit" class="chat-send btn-icon soft soft-press"
+            data-fa-aria="ارسال پیام" data-en-aria="Send message" aria-label="ارسال پیام">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16M13 5l7 7-7 7"/></svg>
+    </button>
+  </form>
+</div>
+<div class="sticky-cta" id="stickyCta">
+  <a href="/#contact" class="btn btn-primary soft soft-press"
+     data-fa="یه گفت‌وگو داشته باشیم" data-en="Let’s talk">یه گفت‌وگو داشته باشیم</a>
+  <a href="https://t.me/TheBlackWalter" class="btn soft soft-press" target="_blank" rel="noopener"
+     data-fa="تلگرام" data-en="Telegram">تلگرام</a>
+</div>
+<script defer src="/static/site.74e0cd224f92.js"></script>
+</body>
+</html>

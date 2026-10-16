@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+<title>این صفحه پیدا نشد | SmartFlowX</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36'%3E%3Crect x='3' y='3' width='30' height='30' rx='10' fill='%23FF6E42'/%3E%3Cpath d='M10 23.5L15.8 15L20.4 19.4L26 11' fill='none' stroke='%23092634' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='26' cy='11' r='2.8' fill='%23092634'/%3E%3C/svg%3E">
+<style>
+:root{
+  --surface:#E9EBEC; --sh-light:#FFFFFF; --sh-dark:rgba(9,38,52,.17);
+  --ink:#092634; --ink-soft:#3E5866;
+  --accent:#FF6E42; --accent-ink:#092634; --accent-sh:rgba(255,110,66,.38);
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --surface:#0F2C3A; --sh-light:rgba(120,190,225,.085); --sh-dark:#051A25;
+    --ink:#F2F6F8; --ink-soft:#A9C0CC;
+    --accent:#FF7E56; --accent-ink:#08202C; --accent-sh:rgba(255,126,86,.30);
+  }
+}
+*{box-sizing:border-box;margin:0}
+body{min-height:100vh;background:var(--surface);color:var(--ink);
+ font-family:Vazirmatn,Tahoma,"Segoe UI",sans-serif;
+ display:grid;place-items:center;padding:24px;line-height:1.9}
+.card{max-width:480px;width:100%;text-align:center;background:var(--surface);
+ border-radius:24px;padding:48px 34px;
+ box-shadow:8px 8px 18px var(--sh-dark), -8px -8px 18px var(--sh-light)}
+.mark{width:64px;height:64px;margin:0 auto 22px;border-radius:18px;
+ background:var(--surface);display:grid;place-items:center;color:var(--accent);
+ box-shadow:inset 4px 4px 9px var(--sh-dark), inset -4px -4px 9px var(--sh-light)}
+.mark svg{width:30px;height:30px}
+h1{font-size:26px;font-weight:900;margin-bottom:12px}
+p{font-size:16px;color:var(--ink-soft);margin-bottom:28px}
+a{display:inline-block;background:var(--accent);color:var(--accent-ink);text-decoration:none;
+ font-weight:700;border-radius:999px;padding:13px 30px;
+ box-shadow:0 6px 16px var(--accent-sh);transition:transform .18s var(--e-soft,ease),box-shadow .18s}
+a:hover{transform:translateY(-2px);box-shadow:0 9px 20px var(--accent-sh)}
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="mark">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 9v4M12 17h.01M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L14.71 3.86a2 2 0 0 0-3.42 0Z"/></svg>
+    </div>
+    <h1>این صفحه پیدا نشد</h1>
+    <p>احتمالاً آدرس عوض شده یا اشتباه تایپ شده. بریم صفحه‌ی اصلی؟</p>
+    <a href="/">برگرد به صفحه‌ی اصلی</a>
+  </div>
+</body>
+</html>

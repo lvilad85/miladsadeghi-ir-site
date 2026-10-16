@@ -18,6 +18,20 @@
 - [About](https://miladsadeghi.ir/about.html): Who Milad Sadeghi is, his background, and why SmartFlowX exists.
 - [Blog](https://miladsadeghi.ir/blog.html): Writing on what should be automated, what should not, and how to decide.
 
+## Service guides
+
+- [Website AI chatbots](https://miladsadeghi.ir/service-ai-chatbot.html): What to prepare, the build process, costs and the live website assistant example.
+- [Business AI agents](https://miladsadeghi.ir/service-ai-agent.html): Tools, permissions, human approval, costs and the AgentBot example.
+- [Business automation](https://miladsadeghi.ir/service-business-automation.html): Workflows, real project examples, handover and cost-benefit assessment.
+- Each guide also has an English version with the en- filename prefix.
+
+## Identity
+
+- Milad Sadeghi is the person behind SmartFlowX. Profile: https://miladsadeghi.ir/about.html
+- Public portrait: https://miladsadeghi.ir/milad-sadeghi.jpg
+- Services are delivered from Tehran and online, with Iranian businesses as the primary audience.
+- Case studies describe implemented capabilities. They do not establish measured savings or guaranteed sales growth.
+
 ## Contact
 
 - Telegram: https://t.me/TheBlackWalter
